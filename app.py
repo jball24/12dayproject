@@ -25,4 +25,4 @@ def index():
 		p.line(data.index.values.tolist(),data['Close'].values.tolist(),legend = "line",line_width = 2,line_color = "red")
 
 if __name__ == '__main__':
-  app.run(port=33507)
+  app.run(port=33507, debug = True)
