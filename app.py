@@ -11,7 +11,7 @@ app.vars={}
 @app.route('/milestone',methods=['GET','POST'])
 def index():
 	if request.method == 'GET':
-		return render_template('index.html')
+		return render_template('input.html')
 	else:
 		app.vars['ticker'] = request.form['input_ticker']
 		app.vars['start'] = request.form['input_start']
